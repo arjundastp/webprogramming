@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun Das T P</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form{
+        background-color: #fff;
+        max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 20px auto;
+     
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .education, .experience {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="color: #f4f4f4;" >ARJUN DAS TP</h1>
+    <p>B-tech Computer Science</p>
+  </header>
+
+  <section>
+    <div class="contact-info">
+      <img src="16457_Photo.jpg" alt="Arjun">
+      <p>Email: arjundastp3@gmail.com</p>
+      
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/arjun-das-t-p-176721212/"> LinkedIn Profile</a> </p>
+      <p>GitHub: <a href="https://github.com/arjundastp">github Profile</a></p>
+      <p>Website : <a href="https://arjundastp.github.io/personal/">Personal Website</a></p>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h3>APJ Abdul kalam Technological University,MESCE Kuttippuram</h3>
+          <p>Btech Computer Science</p>
+          <p>Graduation Year: 2024</p>
+        </li>
+        <li>
+            <h3>Bharatiya Vidya Bhavan,Thirunavaya</h3>
+            <p>Higher Secondary (84.6%) </p>
+            <p>Passed Year: 2020</p>
+          </li>
+          <li>
+            <h3>Bharatiya Vidya Bhavan,Thirunavaya</h3>
+            <p>High school (83%)</p>
+            <p>Passed Year: 2018</p>
+          </li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h2>Achievements & Projects</h2>
+      <ul>
+        <li>
+          <h3>Volunteer Secretary</h3>
+          <p>National Service Scheme Unit 191, MESCE</p>
+          <p>Duration: 2022-23</p>
+          <p>Served as volunteer secretary of National service scheme MESCE <br> for the year 2022-23 and done many activities including organising state level,<br>district level programs.</p>
+        </li>
+        <li>
+            <h3>Web Scraping -Internzea Website</h3>
+            <p>Academic Project</p>
+            <p>2023 March</p>
+            <p>Done a web scraping project to give internship <br> oppurtunities. The project
+            was done using python flas,Beutiful soup library </p>
+          </li>
+
+          <li>
+            <h3>Mapathon Keralam Project</h3>
+            <p>Kerala Govt. Internship</p>
+            <p>2022 april to 2023 October</p>
+            <p>worked as trainer and data collector for mapathon keralam <br> project,conducted to mitigate floods and disaster</p>
+          </li>
+          <li>
+            <h3>Catch the flag-Cyber Dome Calicut</h3>
+            <p>Cybel Cell,Kerala Police</p>
+            <p>October 2023</p>
+            <p>Participated in Catch the flag (CTF) challenge conducted by<br>kerala police cyber cell</p>
+          </li>
+      </ul>
+    </div>
+
+
+  </section>
+
+
+
+
+  
+  <form>
+    <h1 id="" style="color:black" >hey!!! </h1>
+    <p style="color: #45a049;" id="message"></p>
+    
+    <label for="name">Name:</label>
+    <input type="text"  onkeyup="greet()" id="name" name="name" placeholder="Your Name" required>
+    
+    
+    
+  </form>
+</body>
+
+
+
+
+
+
+
+
+
+<script>
+ function greet(){
+    const name=document.getElementById("name").value;
+    const message=document.getElementById("message");
+    
+    
+    message.textContent="hello "+"  "+ name + " " + "how can I help You Please contact through email" ;
+    if(name=="arjun"){
+    
+    alert("hi dude same name");
+    }
+ }
+
+    
+
+</script>
+</html>
